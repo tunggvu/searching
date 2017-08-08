@@ -1,0 +1,7 @@
+<%= form_tag(users_path, method: :get) do %>
+  <%= text_field_tag :term, params[:term] %>
+  <%= submit_tag 'Search', name: nil %>
+<% end %>
+<% @users.each do |user| %>
+  <li><%=  user.name %></li>
+<% end %>
