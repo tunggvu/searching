@@ -2,6 +2,7 @@
   <%= text_field_tag :term, params[:term] %>
   <%= submit_tag 'Search', name: nil %>
 <% end %>
+<li><%= @count %></li>
 <% @users.each do |user| %>
-  <li><%=  user.name %></li>
+  <h3><li><%=  user.name %></li></h3>
 <% end %>
